@@ -94,8 +94,6 @@ class RangeWithGaps
   private
 
   def _add(new_range)
-    return if [new_range.first,new_range.last].compact.empty?
-
     new_range = RangeWithMath.from_range new_range
     return if new_range.empty?
 
